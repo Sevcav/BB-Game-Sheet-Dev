@@ -616,29 +616,8 @@ const REROLL_COST = {
   'WoodElf_BB2025':           50000,
 };
 
-// COBB S03 — all 20 teams, confirmed from API response
-const FALLBACK_TEAMS = [
-  { name:"Superfluous Nimiety",                  race:'Chaos Chosen',        id:'183924', coach:'fe2mike'          },
-  { name:"Djaf Destroyers",                      race:'Tomb Kings',           id:'184150', coach:'Coalerbear'       },
-  { name:"D'Orks",                               race:'Orc',                  id:'184613', coach:'Sevcav'           },
-  { name:"Robber Barons",                        race:'Underworld Denizens',  id:'184693', coach:'CoolPretzel'      },
-  { name:"The Sauros Squad",                     race:'Lizardmen',            id:'184729', coach:'Felix Fernandez'  },
-  { name:"Khornegie's Union Bashers",            race:'Khorne',               id:'184857', coach:'doristhelil'      },
-  { name:"Har-Ganeth Headtakers",                race:'Dark Elf',             id:'184888', coach:'TheUsual1986'     },
-  { name:"Nosferatoes",                          race:'Vampire',              id:'184898', coach:'Tx-Ranger2'       },
-  { name:"Snotholm Syndrome",                    race:'Snotling',             id:'184909', coach:'Randomis Ray'     },
-  { name:"ELFS",                                 race:'High Elf',             id:'185116', coach:'Peter Askew'      },
-  { name:"Stormfjord Reavers",                   race:'Norse',                id:'185429', coach:'Nate Dogg'        },
-  { name:"Children of Ash and Elm",              race:'Norse',                id:'185528', coach:'Jason Stevens'    },
-  { name:"Gross Bay Pukers",                     race:'Nurgle',               id:'186347', coach:'Destrogio2'       },
-  { name:"Limburger Cheesers",                   race:'Skaven',               id:'186352', coach:'KhorneFC'         },
-  { name:"Blackstone Badgers",                   race:'Old World Alliance',   id:'186356', coach:'dredge77'         },
-  { name:"Bad Blitzas",                          race:'Orc',                  id:'186357', coach:'TwoCage'          },
-  { name:"King gizzard and the Lizard Wizards",  race:'Lizardmen',            id:'186472', coach:'Christian Warren' },
-  { name:"Modryn Moonlighters",                  race:'Wood Elf',             id:'186668', coach:'Minimurder28'     },
-  { name:"Prime Panthers",                       race:'Amazon',               id:'188561', coach:'volfiedr'         },
-  { name:"The Black Mountain Stout Swiggaz",     race:'Black Orc',            id:'188726', coach:'Collette'         },
-];
+// Fallback empty — all teams populated live from Tourplay inscriptions API
+const FALLBACK_TEAMS = [];
 
 // ── Fixtures state ──
 let fixturesData = { matches: [], rounds: [], currentRound: 0 };  // raw fixture data
